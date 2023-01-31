@@ -22,7 +22,25 @@ const data = [
         message: 'We wish everyone a..',
         sentBy: 'Doe, Jane',
         sentThrough: ['bookmark', 'mobile'],
-        createdAt: "2020-08-2203:24:00",
+        createdAt: "2020-08-22T03:24:00",
+        startDate: "2020-08-23T03:24:00",
+        endDate: "2020-08-25T03:24:00"
+    },
+    {
+        title: '50th General Assembly',
+        message: 'We wish everyone a..',
+        sentBy: 'Doe, Jane',
+        sentThrough: ['bookmark', 'mobile'],
+        createdAt: "2020-08-22T03:24:00",
+        startDate: "2020-08-23T03:24:00",
+        endDate: "2020-08-25T03:24:00"
+    },
+    {
+        title: 'New Employees',
+        message: 'We wish everyone a..',
+        sentBy: 'Doe, Jane',
+        sentThrough: ['bookmark', 'mobile'],
+        createdAt: "2020-08-22T03:24:00",
         startDate: "2020-08-23T03:24:00",
         endDate: "2020-08-25T03:24:00"
     },

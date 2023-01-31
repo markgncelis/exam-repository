@@ -1,7 +1,84 @@
 .content-wrap {
     max-width: 1024px;
     margin: 0 auto;
+
+    .content-head {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+
+
+        .left-side-buttons {
+            button {
+                margin-right: 5px;
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+
+            #all {
+                background: rgba(34, 197, 94, 0.5);
+                color: rgb(34, 197, 94)
+            }
+
+            #all > span {
+                padding: 2px 8px;
+                border-radius: 15px;
+                background: rgba(34, 197, 94, 1);
+                color: #F7F7F7
+            }
+            
+            #draft{
+                color: #343434
+            }
+
+            #draft > span {
+                padding: 2px 8px;
+                border-radius: 15px;
+                background: rgba(255, 166, 0, 1);
+                color: #F7F7F7
+            }
+        }
+
+        .left-side-buttons > button:active {
+            #all {
+                background: rgba(34, 197, 94, 0.5);
+                color: rgb(34, 197, 94)
+
+            }
+        }
+
+        .input-boxes {
+            
+
+            .search {
+                border-radius: 5px;
+                padding: 5px 10px;
+                border: 1px solid;
+            }
+        
+            .filterBy{
+                margin-right: 5px;
+                border-radius: 5px;
+                padding: 5px 10px;
+                border: 1px solid 
+            }
+        }
+
+    }
 }
-table, th, td {
-    border: 1px solid;
+
+table{
+    color: #2F3061;
+    border: 1px solid #343434;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 16px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 1px solid;
+    
 }

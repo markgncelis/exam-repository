@@ -1,4 +1,4 @@
-import { faBookmark, faMobile } from "@fortawesome/free-solid-svg-icons"
+import { faBookmark, faMobile, faSearch } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import data from "../../data"
 import './content.scss'
@@ -7,6 +7,21 @@ const Content = () => {
     return (
         <>
         <div className="content-wrap">
+            <div className="content-head">
+                <div className="left-side-buttons">
+                    <button id="all"><span>10</span> All</button>
+                    <button id="draft"><span>10</span> Drafts</button>
+                </div>
+                <div className="input-boxes">
+                    <input type="text" placeholder="Filter by" className="filterBy"/>
+                    <span className="relative">
+                        <input type="search" placeholder="Search..." className="search"/>
+                        <FontAwesomeIcon icon={faSearch}
+                        className="absolute top-1 right-2" />
+                    </span>
+                   
+                </div>
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -21,20 +36,20 @@ const Content = () => {
                 </thead>
                 <tbody>
                 {
-                    data.map(item => <tr>
+                    data.map(item => <tr key={item.title}>
                         <td>{item.title}</td>
                         <td>{item.message}</td>
                         <td>{item.sentBy}</td>
                         <td>
                             {item.sentThrough.map(item => 
                                 item === 'bookmark'
-                                ? <FontAwesomeIcon icon={faBookmark}/> 
-                                : <FontAwesomeIcon icon={faMobile}/>
+                                ? <span key={item}><FontAwesomeIcon icon={faBookmark}/> </span>
+                                : <span key={item}><FontAwesomeIcon icon={faMobile}/></span>
                             )}
                         </td>
-                        <td>{item.createdAt}</td>
-                        <td>{item.startDate}</td>
-                        <td>{item.endDate}</td>
+                        <td>{new Date(item.createdAt).toLocaleDateString()}</td>
+                        <td>{new Date(item.startDate).toLocaleDateString()}</td>
+                        <td>{new Date(item.endDate).toLocaleDateString()}</td>
                     </tr>)
                 
                 }
