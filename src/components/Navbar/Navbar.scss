@@ -1,0 +1,63 @@
+/* COLOR PALETTE
+#F7F7F7 - almost white
+#343434 - almost black
+#2F3061 - blue dark
+#FFE66D - yellow
+#a1C6D7 - blue light
+*/
+
+nav {
+    background-color: #343434;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .nav-list {
+        list-style-type: none;
+
+        ul {
+            display: flex;
+            gap: 10px;
+        }
+        
+        ul > li {
+            list-style-type: none;
+            
+            button {
+                background-color: #343434;
+                color: #e3e2e2;
+                font-size: 14px;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            button > .icon {
+                font-size: .8rem;
+            }
+
+            input {
+                text-decoration: none;background-color: #343434;
+                color: #F7F7F7;
+                padding: 10px;
+                line-height: none;
+                border-style: none;
+                border-bottom: 1px solid #F7F7F7;
+
+            }
+
+            input:focus {
+                outline: none
+            }
+
+            .user-btn {
+                border: 1px solid #F7F7F7;
+                border-radius: 100%;
+            }
+
+            .admin-btn{
+                color: rgb(138, 197, 255);
+            }
+        }
+    }
+}
