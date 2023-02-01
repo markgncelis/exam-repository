@@ -144,3 +144,17 @@ th, td {
         }
     }
 }
+
+@media screen and (max-width: 640px) {
+   .pagination {
+        display: flex;
+        flex-direction: column;
+        div {
+            padding: 5px;
+        }
+        .right {
+            text-align: center;
+        }
+   }
+    
+}
