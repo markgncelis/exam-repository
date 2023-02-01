@@ -1,5 +1,5 @@
 import './Navbar.scss';
-import { faBell, faCaretDown, faPerson, faPersonCircleCheck, faSearch, faUser } from "@fortawesome/free-solid-svg-icons"
+import { faBell, faCaretDown, faSearch, faUser } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -20,7 +20,8 @@ const Navbar = () => {
               <li><input type='search' placeholder='employee search' /></li>
               <li><button><FontAwesomeIcon className='icon' icon={faSearch} /></button></li>
               <li><button><FontAwesomeIcon className='icon' icon={faBell} /></button></li>
-              <li><button className='user-btn'><FontAwesomeIcon className='icon' icon={faUser} /></button></li>
+              <li><button><FontAwesomeIcon className='w-4 h-4 object-cover border-2 border-gray-500 bg-gray-500 rounded-full' icon={faUser} /></button></li>
+              {/* <li><button><img src='logo192.png' className='w-5 h-5 object-cover border-2 border-gray-500 bg-gray-500 rounded-full' alt='profile picture'/></button></li> */}
               <li><button className='admin-btn'>Admin <FontAwesomeIcon className='icon' icon={faCaretDown} /></button></li>
             </ul>
 

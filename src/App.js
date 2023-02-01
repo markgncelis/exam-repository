@@ -8,15 +8,17 @@ function App() {
     <div>
       <header>
         <Navbar />
-          <section className='flex justify-around relative mt-12'>
-            <div>
-              <h1 className='text-2xl font-bold'>Announcements</h1>
-              <h2 className='font-semibold'>View, create, or edit announcements for all employees of your company.</h2>
+          <section>
+            <div className='flex relative mx-auto mt-12 w-4/5'>
+              <div className=''>
+                <h1 className='text-2xl font-bold'>Announcements</h1>
+                <h2 className='font-semibold'>View, create, or edit announcements for all employees of your company.</h2>
+              </div>
+              <button className='absolute bottom-0 right-0 px-2 w-56 h-10 rounded-md bg-green-500 text-gray-200'>
+                <FontAwesomeIcon className='mr-2' icon={faPlus} />
+                Post an announcement
+              </button>
             </div>
-            <button className='px-2 w-56 h-10 rounded-md bg-green-500 text-gray-200'>
-              <FontAwesomeIcon className='mr-2' icon={faPlus} />
-              Post an announcement
-            </button>
           </section>
       </header>
       <main>
