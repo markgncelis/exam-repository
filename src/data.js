@@ -1,6 +1,6 @@
 const data = [
     {
-        title: '[FOR YOUR ACTION]',
+        title: '[FOR YOUR ACTION][FOR YOUR ACTION]',
         message: 'In line with the.',
         sentBy: 'Roe, Ken',
         sentThrough: ['bookmark'],
