@@ -1,4 +1,4 @@
-import { faBackwardStep, faBookmark, faCaretLeft, faCaretRight, faForwardStep, faMobile, faSearch } from "@fortawesome/free-solid-svg-icons"
+import { faBackwardStep, faBookmark, faCaretLeft, faCaretRight, faForwardStep, faInfoCircle, faMobile, faSearch } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react"
 import data from "../../data"
@@ -31,7 +31,7 @@ const Content = () => {
                             <th>TITLE</th>
                             <th>MESSAGE</th>
                             <th>SENT BY</th>
-                            <th>SENT THROUGH</th>
+                            <th>SENT THROUGH <span>&nbsp;<FontAwesomeIcon className="text-blue-500" icon={faInfoCircle}/></span></th>
                             <th>DATE CREATED</th>
                             <th>START DATE</th>
                             <th>END DATE</th>
