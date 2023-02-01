@@ -1,5 +1,6 @@
 .content-wrap {
-    max-width: 1024px;
+    max-width: 1610px;
+    width: 80%;
     margin: 0 auto;
 
     .content-head {
@@ -73,28 +74,51 @@ table{
     border: 1px solid #343434;
     margin: 0 auto;
     width: 100%;
-    margin: 16px 0px;
+    margin: 16px 0px 0px;
 }
 
 th, td {
     text-align: left;
     padding: 5px 10px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-tfoot {
-    border-width: 100%;
-    border-collapse: collapse;
-    .left {
-        background: red;
-    }
-    .middle {
-        background: blue;
-        input {
-            width: 50px;
-            height: 30px;
+.pagination  {
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid;
+   padding: 10px;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   margin-top: 0;
+
+.left {
+    background: red;
+    display: flex;
+    justify-content: center;
+    span {
+        margin-right: 10px;
+
+        select {
+            padding: 2px 5px;
             border-radius: 5px;
-            text-align: center;
         }
     }
+}
+.middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    input {
+        width: 50px;
+        height: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+}
+
 }

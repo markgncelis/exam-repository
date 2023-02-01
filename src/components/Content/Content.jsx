@@ -53,37 +53,30 @@ const Content = () => {
                     </tr>)
                 }
                 </tbody>
-                <tfoot>
-                    <tr>
-                        <td className="left">
-                            <span>Items per page</span>
-                            <span>
-                                <select name="number">
-                                    <option value="10">10</option>
-                                    <option value="20">20</option>
-                                    <option value="30">30</option>
-                                </select>
-                            </span>
-                        </td>
-                        <td className="middle">
-                            <FontAwesomeIcon icon={faBackwardStep} />
-                            <FontAwesomeIcon icon={faCaretLeft} />
-                            <span>Page</span><input type='text' value='1' /><span>of 1</span>
-                            <FontAwesomeIcon icon={faCaretRight} />
-                            <FontAwesomeIcon icon={faForwardStep} />
-                            
-
-                        </td>
-                        <td className="right">
-                            <span>Showing 1 - 10 of 1</span>
-
-                        </td> 
-                    </tr>
-                </tfoot>
             </table>
-
+            <div className="pagination">
+                <div className="left">
+                    <span>Items per page</span>
+                    <span>
+                        <select name="number">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                        </select>
+                    </span>
+                </div>
+                <div className="middle">
+                    <FontAwesomeIcon icon={faBackwardStep} />
+                    <FontAwesomeIcon icon={faCaretLeft} />
+                    <span>Page</span><input type='text' value='1' /><span>of 1</span>
+                    <FontAwesomeIcon icon={faCaretRight} />
+                    <FontAwesomeIcon icon={faForwardStep} />
+                </div>
+                <div className="right">
+                    <span>Showing 1 - 10 of 10</span>
+                </div>
+            </div>
         </div>
-
         </>
     )
 }
