@@ -24,38 +24,40 @@ const Content = () => {
                    
                 </div>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>TITLE</th>
-                        <th>MESSAGE</th>
-                        <th>SENT BY</th>
-                        <th>SENT THROUGH</th>
-                        <th>DATE CREATED</th>
-                        <th>START DATE</th>
-                        <th>END DATE</th>
-                    </tr>
-                </thead>
-                <tbody>
-                {
-                    data.map(item => <tr key={item.title}>
-                        <td>{item.title}</td>
-                        <td>{item.message}</td>
-                        <td>{item.sentBy}</td>
-                        <td>
-                            {item.sentThrough.map(item => 
-                                item === 'bookmark'
-                                ? <span key={item}><FontAwesomeIcon icon={faBookmark}/> </span>
-                                : <span key={item}><FontAwesomeIcon icon={faMobile}/></span>
-                            )}
-                        </td>
-                        <td>{new Date(item.createdAt).toLocaleDateString()}</td>
-                        <td>{new Date(item.startDate).toLocaleDateString()}</td>
-                        <td>{new Date(item.endDate).toLocaleDateString()}</td>
-                    </tr>)
-                }
-                </tbody>
-            </table>
+            <div className="table-overflow">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TITLE</th>
+                            <th>MESSAGE</th>
+                            <th>SENT BY</th>
+                            <th>SENT THROUGH</th>
+                            <th>DATE CREATED</th>
+                            <th>START DATE</th>
+                            <th>END DATE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {
+                        data.map(item => <tr key={item.title}>
+                            <td>{item.title}</td>
+                            <td>{item.message}</td>
+                            <td>{item.sentBy}</td>
+                            <td>
+                                {item.sentThrough.map(item => 
+                                    item === 'bookmark'
+                                    ? <span key={item}><FontAwesomeIcon icon={faBookmark}/> </span>
+                                    : <span key={item}><FontAwesomeIcon icon={faMobile}/></span>
+                                )}
+                            </td>
+                            <td>{new Date(item.createdAt).toLocaleDateString()}</td>
+                            <td>{new Date(item.startDate).toLocaleDateString()}</td>
+                            <td>{new Date(item.endDate).toLocaleDateString()}</td>
+                        </tr>)
+                    }
+                    </tbody>
+                </table>
+            </div>
             <div className="pagination">
                 <div className="left">
                     <span>Items per page</span>
