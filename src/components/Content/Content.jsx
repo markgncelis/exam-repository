@@ -66,11 +66,11 @@ const Content = () => {
                     </span>
                 </div>
                 <div className="middle">
-                    <FontAwesomeIcon icon={faBackwardStep} />
-                    <FontAwesomeIcon icon={faCaretLeft} />
+                    <FontAwesomeIcon className="backStep" icon={faBackwardStep} />
+                    <FontAwesomeIcon className="caretIcon" icon={faCaretLeft} />
                     <span>Page</span><input type='text' value='1' /><span>of 1</span>
-                    <FontAwesomeIcon icon={faCaretRight} />
-                    <FontAwesomeIcon icon={faForwardStep} />
+                    <FontAwesomeIcon className="caretIcon" icon={faCaretRight} />
+                    <FontAwesomeIcon className="forwardStep" icon={faForwardStep} />
                 </div>
                 <div className="right">
                     <span>Showing 1 - 10 of 10</span>
