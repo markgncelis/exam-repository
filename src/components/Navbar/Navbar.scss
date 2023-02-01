@@ -14,11 +14,15 @@ nav {
     .wrapper {
         display: flex;
         justify-content: space-between;
+
         .sprout-logo {
-            width: 192px;
+            width: 134px;
+            padding: 10px;
         }
         
         .nav-list {
+            display: flex;
+            align-items: center;
             list-style-type: none;
     
             ul {
