@@ -1,4 +1,3 @@
-import './App.css';
 import Content from './components/Content/Content';
 import ContentHeader from './components/ContentHeader/ContentHeader';
 import Navbar from './components/Navbar/Navbar';
