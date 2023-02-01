@@ -1,5 +1,5 @@
 import './Navbar.scss';
-import { faBell, faBurger, faCaretDown, faNavicon, faSearch, faUser } from "@fortawesome/free-solid-svg-icons"
+import { faBell, faCaretDown, faNavicon, faSearch, faUser } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 

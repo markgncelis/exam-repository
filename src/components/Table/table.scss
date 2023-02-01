@@ -1,0 +1,22 @@
+.table-overflow {
+    overflow-x: auto;
+}
+
+table{
+    color: #2F3061;
+    border: 1px solid gray;
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 100%;
+    margin: 16px 0px 0px;
+    font-size:smaller;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
