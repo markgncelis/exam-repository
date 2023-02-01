@@ -10,7 +10,7 @@ function App() {
         <Navbar />
           <section>
             <div className='flex relative mx-auto mt-12 w-4/5'>
-              <div className=''>
+              <div>
                 <h1 className='text-2xl font-bold'>Announcements</h1>
                 <h2 className='font-semibold'>View, create, or edit announcements for all employees of your company.</h2>
               </div>

@@ -15,13 +15,15 @@ const Content = () => {
                     <button id="draft"><span>10</span> Drafts</button>
                 </div>
                 <div className="input-boxes">
-                    <input type="text" placeholder="Filter by" className="filterBy"/>
+                    {/* <input type="text" placeholder="Filter by" className="filterBy"/> */}
+                    <select className="filterBy" name="filter">
+                        <option >Filter by</option>
+                    </select>
                     <span className="relative">
                         <input type="search" placeholder="Search..." className="search"/>
                         <FontAwesomeIcon icon={faSearch}
                         className="absolute top-1 right-2" />
                     </span>
-                   
                 </div>
             </div>
             <div className="table-overflow">
