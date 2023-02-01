@@ -1,8 +1,10 @@
 import { faBackwardStep, faBookmark, faCaretLeft, faCaretRight, faForwardStep, faMobile, faSearch } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { useState } from "react"
 import data from "../../data"
 import './content.scss'
 const Content = () => {
+    const [pageNumber, setPageNumber] = useState(1)
     
     return (
         <>
@@ -59,16 +61,16 @@ const Content = () => {
                     <span>Items per page</span>
                     <span>
                         <select name="number">
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
+                            <option>10</option>
+                            <option>20</option>
+                            <option>30</option>
                         </select>
                     </span>
                 </div>
                 <div className="middle">
                     <FontAwesomeIcon className="backStep" icon={faBackwardStep} />
                     <FontAwesomeIcon className="caretIcon" icon={faCaretLeft} />
-                    <span>Page</span><input type='text' value='1' /><span>of 1</span>
+                    <span>Page</span><input type='text' value={pageNumber}/><span>of 1</span>
                     <FontAwesomeIcon className="caretIcon" icon={faCaretRight} />
                     <FontAwesomeIcon className="forwardStep" icon={faForwardStep} />
                 </div>

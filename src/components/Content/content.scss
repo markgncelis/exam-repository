@@ -1,6 +1,6 @@
 .content-wrap {
     max-width: 1610px;
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
 
     .content-head {
@@ -71,7 +71,7 @@
 
 table{
     color: #2F3061;
-    border: 1px solid #343434;
+    border: 1px solid gray;
     margin: 0 auto;
     width: 100%;
     margin: 16px 0px 0px;
@@ -95,48 +95,46 @@ th, td {
    border-bottom-right-radius: 5px;
    margin-top: 0;
 
-.left {
-    display: flex;
-    justify-content: center;
-    span {
-        margin-right: 10px;
+    .left {
+        display: flex;
+        justify-content: center;
+        span {
+            margin-right: 10px;
 
-        select {
-            padding: 0px 5px;
+            select {
+                padding: 0px 5px;
+                width: 50px;
+                height: 25px;
+                border: 1px solid;
+                border-radius: 5px;
+            }
+        }
+    }
+    .middle {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+
+        .backStep {
+            font-size: 12px;
+            color: gray;
+        }
+
+        .caretIcon {
+            color: gray;
+        }
+        input {
             width: 50px;
             height: 25px;
             border: 1px solid;
             border-radius: 5px;
+            text-align: center;
+        }
+
+        .forwardStep {
+            font-size: 12px;
+            color: gray;
         }
     }
-}
-.middle {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5px;
-
-    .backStep {
-        font-size: 12px;
-        color: gray;
-    }
-
-    .caretIcon {
-        color: gray;
-    }
-    input {
-        width: 50px;
-        height: 25px;
-        border: 1px solid;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    .forwardStep {
-        font-size: 12px;
-        color: gray;
-    }
-
-}
-
 }
