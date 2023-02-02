@@ -22,7 +22,7 @@ const Pagination = () => {
                 <div className="middle">
                     <FontAwesomeIcon className="backStep" icon={faBackwardStep} />
                     <FontAwesomeIcon className="caretIcon" icon={faCaretLeft} />
-                    <span>Page</span><input type='text' value={pageNumber}/><span>of 1</span>
+                    <span>Page</span><input type='text' defaultValue="1"/><span>of 1</span>
                     <FontAwesomeIcon className="caretIcon" icon={faCaretRight} />
                     <FontAwesomeIcon className="forwardStep" icon={faForwardStep} />
                 </div>

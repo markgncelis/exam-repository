@@ -6,7 +6,7 @@ const TableBody = ({data}) => {
         <>
         <tbody>
         {
-            data.map(item => <tr key={item.title}>
+            data.map(item => <tr key={item.id}>
                 <td>{item.title}</td>
                 <td>{item.message}</td>
                 <td>{item.sentBy}</td>
