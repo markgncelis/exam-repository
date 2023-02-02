@@ -1,16 +1,18 @@
 .pagination  {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid;
     padding: 10px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: 0 0 100px;
-
- 
+    font-size: 12px;
+    
      .left {
          display: flex;
          justify-content: center;
+         align-items: center;
          span {
              margin-right: 10px;
  
